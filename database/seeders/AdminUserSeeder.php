@@ -14,16 +14,16 @@ class AdminUserSeeder extends Seeder
      */
     public function run(): void
     {
-        
+        info('seedding');
         DB::table('users')->insert([
             'name' => 'Admin User',
             'role' => 'admin', // Assign admin role
-            'email' => 'admin@example.com',
+            'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
             'password' => Hash::make('12345678'), 
-            'remember_token' => \Str::random(10),
-            'created_at' => now(),
-            'updated_at' => now(),
+            // 'remember_token' => \Str::random(10),
+            // 'created_at' => now(),
+            // 'updated_at' => now(),
         ]);
     }
 }

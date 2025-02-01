@@ -12,6 +12,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+
+            // Call individual seeders
+        $this->call([
+            AdminUserSeeder::class,
+        ]);
+
+
+
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
