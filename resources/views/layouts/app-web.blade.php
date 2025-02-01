@@ -34,25 +34,12 @@
             <main>
                 <div class="flex h-screen">
                     <!-- Sidebar -->
-                    <div class="w-64 bg-gray-800 text-white p-4">
-                        <h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
-                        <ul class="space-y-4">
-                            <!-- Dashboard Link -->
-                            <li><a href="{{ route('admin.products.index') }}" class="hover:bg-gray-700 p-2 rounded">Dashboard</a></li>
-
-                            <!-- Customers Link -->
-                            <li><a href="{{ route('admin.customers.index') }}" class="hover:bg-gray-700 p-2 rounded">Customers</a></li>
-                            <!-- Enquiries Link -->
-                            <li><a href="{{ route('admin.enquiries.index') }}" class="hover:bg-gray-700 p-2 rounded">Enquiries</a></li>
-
-
-                            {{-- <li><a href="#" class="hover:bg-gray-700 p-2 rounded">Settings</a></li> --}}
-                        </ul>
-                    </div>
+                
 
                     <!-- Main Content -->
                     <div class="flex-1 p-6">
-                        {{ $slot }}
+                        {{-- {{ $slot }} --}}
+                        @yield('content')
                     </div>
                 </div>
             </main>

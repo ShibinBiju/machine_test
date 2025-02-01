@@ -14,9 +14,6 @@ class CustomersController extends Controller
                // Fetch products with pagination
                $customers = User::whereNull('role')->paginate(5); 
 
-            //    dd($coustomers);
-
-
                return view('admin.Coustomers.index', compact('customers'));
             
     }

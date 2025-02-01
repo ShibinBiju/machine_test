@@ -28,7 +28,6 @@
                     <tr>
                         <td class="px-6 py-4">{{ $data->name }}</td>
                         <td class="px-6 py-4">{{ $data->email }}</td>
-                       
                     </tr>
                 @endforeach
 

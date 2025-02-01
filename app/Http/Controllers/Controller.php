@@ -15,12 +15,10 @@ class Controller extends BaseController
     public function dashboard(){
 
         if(Auth()->user()->role == 'admin'){
-
-
             return redirect()->route('admin.products.index');
         }
 
-        // return view()
+        return redirect()->route('web.home.index');
 
     }
 }
